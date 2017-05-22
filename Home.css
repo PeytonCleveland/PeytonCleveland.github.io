@@ -1,0 +1,89 @@
+@font-face{
+    font-family: Lato-Regular;
+    src: url('Lato-Regular.ttf');
+}
+
+@font-face{
+    font-family: Lato-Light;
+    src: url('Lato-Light.ttf');
+}
+
+@font-face{
+    font-family: Uni-sans-heavy;
+    src: url('Uni Sans Heavy.otf')
+}
+
+@font-face{
+    font-family: Uni-sans-heavy-italic;
+    src: url('Uni Sans Heavy Italic.otf')
+}
+
+*{
+	margin: 0;
+	padding: 0;
+    text-rendering:geometricPrecision;
+}
+
+html{
+    display: flex;
+    flex-direction: column;
+    height: 600%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.contactBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.2%;
+    min-height: 35px;
+    width: 100%;
+    background-color: #e5e5e5;
+}
+
+.contactBarSub{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 45px;
+}
+
+.contactBar img{
+    height: 14px;
+    margin-left: 10px;
+}
+
+.contactBar p{
+    font-family: Lato-Regular;
+    font-size: .9em;
+    margin: 10px;
+    color: #888888;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    height:2.4%;
+    width: 100%;
+    background-color: white;
+}
+
+.slides{
+    display: flex;
+    flex-direction: column;
+    height: 1600px;
+    width: 100%;
+    background-color: aqua;
+    overflow-y: scroll;
+}

@@ -38,6 +38,7 @@ body {
     width: 100%;
     background-image: url("ComingSoon.png");
     background-size:cover;
+    background-position:center;
 }
 
 .contactBar{

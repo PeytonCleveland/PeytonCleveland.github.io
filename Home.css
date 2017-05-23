@@ -79,6 +79,10 @@ body {
     background-color: white;
 }
 
+.navBar img{
+    height: 35px;
+}
+
 .slides{
     display: flex;
     flex-direction: column;

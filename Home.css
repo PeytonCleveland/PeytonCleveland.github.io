@@ -27,7 +27,7 @@
 html{
     display: flex;
     flex-direction: column;
-    height: 600%;
+    height: 100%;
     width: 100%;
 }
 

@@ -59,8 +59,22 @@ body {
     padding-right: 45px;
 }
 
+.contactBarSubRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
 .contactBar img{
     height: 14px;
+    margin-left: 10px;
+}
+
+.contactBarSubRight img{
+    height: 16px;
     margin-left: 10px;
 }
 
@@ -71,22 +85,3 @@ body {
     color: #888888;
 }
 
-.navBar{
-    display: flex;
-    flex-direction: row;
-    height:2.4%;
-    width: 100%;
-    background-color: white;
-}
-
-.navBar img{
-    width: 35px;
-}
-
-.slides{
-    display: flex;
-    flex-direction: column;
-    height: 20%;
-    width: 100%;
-    background-color: black;
-}

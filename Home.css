@@ -1,0 +1,683 @@
+@font-face{
+    font-family: Lato-Regular;
+    src: url('Lato-Regular.ttf');
+}
+
+@font-face{
+    font-family: Lato-Light;
+    src: url('Lato-Light.ttf');
+}
+
+@font-face{
+    font-family: Lato-Bold;
+    src: url('Lato-Bold.ttf');
+}
+
+@font-face{
+    font-family: Uni-sans-heavy;
+    src: url('Uni Sans Heavy.otf')
+}
+
+@font-face{
+    font-family: Uni-sans-heavy-italic;
+    src: url('Uni Sans Heavy Italic.otf')
+}
+
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url('Montserrat-Bold.ttf')
+}
+
+*{
+	margin: 0;
+	padding: 0;
+    text-rendering:geometricPrecision;
+}
+
+html{
+    display: flex;
+    flex-direction: column;
+    height: 600%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.contactBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6%;
+    width: 100%;
+    background-color: #e5e5e5;
+    position: fixed;
+    z-index: 3;
+    min-height: 35px;
+}
+
+.contactBarSub{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 45px;
+}
+
+.contactBarSubRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.contactBar img{
+    height: 14px;
+    margin-left: 10px;
+}
+
+.contactBarSubRight img{
+    height: 16px;
+    margin-left: 10px;
+}
+
+.contactBar p{
+    font-family: Lato-Regular;
+    font-size: .9em;
+    margin: 10px;
+    color: #888888;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    height:2%;
+    min-height: 100px;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:6%;
+    z-index: 3;
+}
+
+.navBarSub{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 110px;
+}
+
+.navBar img{
+    margin-left: 10%;
+    image-resolution: from-image;
+}
+
+.email{
+    margin-top: 3px;
+}
+
+.navBar a{
+    text-decoration: none;
+    position: relative;
+}
+
+.navBar a:before{
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  bottom: 27%;
+  left: 20%;
+  background-color: #ee9333;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navBar a:hover:before{
+    visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.navBarSub h1{
+    font-family: Montserrat-Bold;
+    color: #999999;
+    font-size: 1em;
+    margin: 22px;
+    height: 100%;
+}
+
+.navBarSub h1:hover{
+    color: #ee9333;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    overflow: hidden;
+    background-image: url("vulcan_bg.jpg");
+    background-attachment: fixed;
+    padding-top: 9%;
+}
+
+.slider h1{
+    display: flex;
+    font-size: 6em;
+    font-family: Uni-sans-heavy-italic;
+    color: #ee9333;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider h2{
+    display: flex;
+    margin-right: 70%;
+    font-size: 4em;
+    font-family: Uni-sans-heavy-italic;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider h3{
+    display: flex;
+    margin-left: 40%;
+    width: 60%;
+    font-size: 4em;
+    font-family: Uni-sans-heavy-italic;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.75%;
+    overflow: hidden;
+    background-color: #ee9333;
+}
+
+.quote h2{
+    margin-left: 10%;
+    font-family: Montserrat-Bold;
+    color: white;
+}
+
+.quote h1{
+    position: absolute;
+    font-family: Montserrat-Bold;
+    text-decoration: underline;
+    color: white;
+    left: 73%;
+}
+
+.quote h1:hover{
+    cursor: pointer;
+}
+
+.quote img{
+    margin: 10%;
+    width: 25%;
+}
+
+.explore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+
+.explore a{
+    font-family: Montserrat-Bold;
+    color: #363636;
+    border-bottom: 4px solid #ee9333;
+    font-size: 3em;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.exploreContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 45%;
+}
+
+.exploreItem{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    height: 75%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.exploreItem img{
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.exploreBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 78%;
+    height: 45%;
+    margin-top: -7%;
+    margin-left: 5%;
+}
+
+.exploreBox img{
+    max-height: 1em;
+    margin-left: 10px;
+}
+
+.blogInfo{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.boxContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 90%;
+    margin: 2.25em;
+    background-color: white;
+}
+
+.boxContent a{
+    font-family: Lato-Bold;
+    font-size: .9em;
+    color: #888888;
+    text-decoration: none;
+    border-bottom: 2px solid #999999;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.boxContent h3{
+    font-family: Montserrat-Bold;
+    font-size: 1.15em;
+    color: #363636;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.boxContent p{
+    font-family: Lato-Regular;
+    font-size: .95em;
+    color: #888888;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(vulcan_bg.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.projects h1{
+    font-size: 2.5em;
+    font-family: Montserrat-Bold;
+    color: white;
+    border-bottom: 4px solid #ee9333;
+    padding-bottom: 5px;
+}
+
+.picker{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.picker h2{
+    font-family: Montserrat-Bold;
+    font-size: 1em;
+    color: white;
+    margin: 15px;
+    margin-top: 25px;
+}
+
+.projectImages{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:9%;
+    overflow: hidden;
+}
+
+.projectImages img{
+    max-width: 25%;
+    height: auto;
+    object-fit: cover;
+    object-position: 40% 50%;
+}
+
+.shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:5%;
+    align-items: center;
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(vulcan_bg.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.shopImages{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:9%;
+    overflow: hidden;
+}
+
+.shopImages img{
+    max-width: 25%;
+    height: auto;
+    object-fit: cover;
+    object-position: 40% 50%;
+}
+
+.shop h1{
+    font-size: 3.5em;
+    font-family: Montserrat-Bold;
+    color: white;
+    border-bottom: 4px solid #ee9333;
+    padding-bottom: 5px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 14%;
+    background-color: white;
+}
+
+.contact h1{
+    font-family: Montserrat-Bold;
+    font-size: 5em;
+    color: #ee9333;
+    width: 40%;
+    margin-left: 9%;
+    margin-top: 7%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 90%;
+    margin-left: 3%;
+    margin-top: 1.5%;
+}
+
+.form h2{
+    font-family: Montserrat-Bold;
+    font-size: 2.25em;
+    color: #ee9333;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.form input[type="text"]{
+    height: 2.4em;
+    width: 125%;
+    margin-left: 3px;
+    border: 1px solid gray;
+}
+
+.form input[type="email"]{
+    height: 2.4em;
+    width: 125%;
+    margin-left: 3px;
+    border: 1px solid gray;
+}
+
+.form textarea{
+    height: 10em;
+    width: 125%;
+    margin-left: 3px;
+    resize: none;
+    border: 1px solid gray;
+}
+
+.form input[type="submit"]{
+    height: 2.4em;
+    width: 48%;
+    margin-top: 10px;
+    background-color: white;
+    color: #ee9333;
+    font-family: Montserrat-Bold;
+    font-size: 1em;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+
+.form input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+.form input[type="reset"]{
+    height: 2.4em;
+    width: 48%;
+    margin-top: 10px;
+    background-color: white;
+    color: #ee9333;
+    font-family: Montserrat-Bold;
+    font-size: 1em;
+    border: 1px solid gray;
+}
+
+.form input[type="reset"]:hover{
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 126%;
+    margin-left: 3px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    height: 9%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.upper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+    height: 60%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 100px;
+    margin-top: -20px;
+}
+
+.box img{
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+.box h2{
+    font-family: Montserrat-Bold;
+    font-size: 1.2em;
+    color: white;
+    border-bottom: 2px solid #666666;
+    padding-bottom:  8px;
+}
+
+.box h1{
+    font-family: Montserrat-Bold;
+    font-size: 1.5em;
+    color: white;
+}
+
+.box p{
+    font-family: Lato-Regular;
+    font-size: .9em;
+    color: #888888;
+    text-align: left;
+    line-height: 25px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.social img{
+    max-height: 1em;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.contactBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.link a{
+    width: 50%;
+    text-align: left;
+    text-decoration: none;
+    color: #888888;
+    font-family: Lato-Regular;
+    font-size: .9em;
+}
+
+.link a:hover{
+    color: #ee9333;
+    position: relative;
+    left: 10px;
+}
+
+.lower{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+    height: 30%;
+    background-color: #313131;
+}
+
+.lower h4{
+    color: white;
+    font-size: .9em;
+    font-family: Montserrat-Bold;
+}
+
+.lower h3{
+    color: #ee9333;
+    font-size: 1.5em;
+    font-family: Uni-sans-heavy-italic;
+    margin-left: 6px;
+    margin-right: 6px;
+}
